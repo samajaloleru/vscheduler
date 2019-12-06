@@ -487,11 +487,11 @@
 	.main-menu .navbar-header .navbar-toggle{
 		display:inline-block;
 		z-index:7;
-		border:1px solid #ff6288;
+		border:1px solid #4283f2;
 		float:none;
 		margin:0px 0px 0px 0px;
 		border-radius:0px;
-		background:#ff6288;
+		background:#4283f2;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle .icon-bar{
@@ -502,7 +502,7 @@
 		float:none !important;
 		margin:0px !important;
 		width:100% !important;
-		background:#ff6288;
+		background:#4283f2;
 		border:1px solid #ffffff;
 		border-top:none;
 	}
@@ -586,7 +586,7 @@
 		padding:10px 10px !important;
 		line-height:22px;
 		color:#ffffff;
-		background:#ff6288;
+		background:#4283f2;
 		text-align:left;
 		min-height:0px;
 	}
@@ -594,7 +594,7 @@
 	.main-menu .navbar-collapse > .navigation > li > a:hover,
 	.main-menu .navbar-collapse > .navigation > li > a:active,
 	.main-menu .navbar-collapse > .navigation > li > a:focus{
-		background:#ff6288;
+		background:#4283f2;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:hover > a,
@@ -602,7 +602,7 @@
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
-		background:#ff6288;
+		background:#4283f2;
 		color:#ffffff !important;
 	}
 	
@@ -736,8 +736,8 @@
 		padding: 0px;
 		text-align: center;
 		border-radius: 0px;
-		background: #ff6288;
-		border: 1px solid #ff6288;
+		background: #4283f2;
+		border: 1px solid #4283f2;
 	}
 	
 	.main-menu .navbar-header .navbar-toggler .icon-bar{
