@@ -82,6 +82,10 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 
+orange {
+	color:  #eebf40;
+}
+
 a{
 	text-decoration:none;
 	cursor:pointer;
@@ -1619,7 +1623,6 @@ img{
 
 .main-banner .content-column h2{
 	position:relative;
-	color:#444444;
 	font-size:50px;
 	font-weight:400;
 	line-height:1.3em;
@@ -2042,7 +2045,6 @@ img{
 	height:652px;
 	z-index:-1;
 	display:inline-block;
-	background:url(../images/resource/pattern-1.png) no-repeat;
 }
 
 .app-section .content-column{
