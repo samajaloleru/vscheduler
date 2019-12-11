@@ -1,3 +1,37 @@
+<?PHP
+  // form handler
+  function validateFeedbackForm($arr)
+  {
+    extract($arr);
+
+    if(!isset($name, $email, $subject, $message)) return;
+
+    if(!$name) {
+      return "Please enter your Name";
+    }
+    if(!preg_match("/^\S+@\S+$/", $email)) {
+      return "Please enter a valid Email address";
+    }
+    if(!$subject) $subject = "Contact from website";
+    if(!$message) {
+      return "Please enter your comment in the Message box";
+    }
+
+    // send email and redirect
+    $to = "feedback@example.com";
+    $headers = "From: webmaster@example.com" . "\r\n";
+    mail($to, $subject, $message, $headers);
+    header("Location: http://www.example.com/thankyou.html");
+    exit;
+  }
+
+  // execution starts here
+  if(isset($_POST['sendfeedback'])) {
+    // call form handler
+    $errorMsg = validateFeedbackForm($_POST);
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -83,7 +117,7 @@
 										<div class="title">Your email address will not be published. Required fields are marked *</div>
 									</div>
 									
-									<form method="post" action="http://t.commonsupport.com/alfena/sendemail.php" id="contact-form">
+									<form method="post" action="email.php" id="contact-form">
 										<h4>Personal Details</h4>
 										<div class="row clearfix">
 											<div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -98,11 +132,6 @@
 											</div>
 											<div class="form-group col-lg-6 col-md-6 col-sm-12">
 												<input type="text" name="username" placeholder="Phone Number*" required>
-											</div>
-											
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<label>Profile Image</label>
-												<input type="file" placeholder="Profile Image*" required>
 											</div>
 										</div>
 										<h4>Clients Details</h4>
@@ -132,11 +161,11 @@
 											</div>
 											
 											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<input type="text" name="email" placeholder="State*" required>
+												<input type="text" name="username" placeholder="State*" required>
 											</div>
 											
 											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<input type="text" name="email" placeholder="Country*" required>
+												<input type="text" name="username" placeholder="Country*" required>
 											</div>
 
 											<div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -207,10 +236,8 @@
 								<div class="footer-widget links-widget">
 									<h2>CONTACT</h2>
 									<ul class="footer-list">
-										<li>234 809 310 7121</li>
-										<li>234 809 310 7125</li>
+										<li>234 (0)90315000145</li>
 										<li>sales@vscheduler.com</li>
-										<li>North Carolina, USA</li>
 									</ul>
 								</div>
 							</div>
