@@ -652,11 +652,10 @@ img{
 	display:block;
 	font-size:15px;
 	color:#222222;
-	line-height:30px;
 	font-weight:400;
 	opacity:1;
 	text-transform:capitalize;
-	padding:35px 0px 35px 0px;
+	padding:20px 0px 20px 0px;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -1631,7 +1630,7 @@ img{
 .main-banner .content-column .text{
 	position:relative;
 	color:#7f8497;
-	font-size:16px;
+	font-size:18px;
 	margin-top:15px;
 	line-height:1.8em;
 	margin-bottom:32px;
