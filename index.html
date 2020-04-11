@@ -1,643 +1,382 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="img//apple-icon.png">
+        <link rel="icon" type="image/png" href="img//favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>
+            Anema Mart
+        </title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+        <!--     Fonts and icons     -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <!-- CSS Files -->
+        <link  href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+        <link  href="css/paper-kit.css" rel="stylesheet" type="text/css" >
+        <link  href="css/style.css" rel="stylesheet" type="text/css" >
 
-	<head>
-		<meta charset="utf-8">
-		<title>vScheduler</title>
-		
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="header-2">
+            <nav class="navbar navbar-expand-lg text-red bg-dark">
+                <div class="container">
+                    <a class="navbar-brand">08135880220</a>
+                    <a class="navbar-brand"> Info@Anema.com</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a target="_blank" class="btn btn-link btn-neutral">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg pt-0 bg-success navbar-absolute">
+                <div class="container">
+                    <a class="navbar-brand mb-0">
+                        <img src="img/logo.jpeg" alt="" style="width: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                        <ul class="navbar-nav ml-auto">
+                            <a href="index.html" class="btn btn-link btn-neutral">Home</a>
+                            <a href="about.html" class="btn btn-link btn-neutral">About Us</a>
+                            <a href="store.html" class="btn btn-link btn-neutral">Online Store</a>
+                            <a href="new.html" class="btn btn-link btn-neutral">News & Events</a>
+                            <a href="contact.html" class="btn btn-link btn-neutral">Contact</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-		<link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <div class="" >
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                    <div class="page-header page-header-small" style="background-image: url('img/background1.jpg');">
+                        <div class="filter"></div>
+                        <div class="content-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 text-left">
+                                        <h1 class="title">Anema Mall</h1>
+                                        <br />
+                                        <div class="buttons">
+                                            <a href="#pablo" class="btn btn-danger btn-round  btn-lg">
+                                                Read More
+                                            </a>
+                                            <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                                <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                            <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                                <i class="fa fa-get-pocket"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="page-header page-header-small" style="background-image: url('img/background1.jpg')">
+                        <div class="filter"></div>
+                        <div class="content-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 ml-auto mr-auto text-center">
+                                        <h1 class="title">Awesome Experiences</h1>
+                                        <h5>Now you have no excuses, it's time to surprise your clients, your competitors, and why not, the world. You probably won't have a better chance to show off all your potential if it's not by designing a website for your own agency or web studio.</h5>
+                                        <br />
+                                        <h6>Connect with us:</h6>
+                                        <div class="buttons">
+                                        <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                        <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="#pablo" class="btn btn-neutral btn-link btn-just-icon">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="page-header page-header-small" style="background-image: url('img/background1.jpg')">
+                        <div class="filter"></div>
+                        <div class="content-center">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-md-7 ml-auto text-right">
+                                <h2 class="title">Premium Offers for Venice</h2>
+                                <h5>Now you have no excuses, it's time to surprise your clients, your competitors, and why not, the world. You probably won't have a better chance to show off all your potential if it's not by designing a website for your own agency or web studio.</h5>
+                                <br />
+                                <div class="buttons">
+                                <a href="#pablo" class="btn btn-neutral btn-link btn-lg">
+                                    <i class="fa fa-share-alt"></i> Share Offer
+                                </a>
+                                <a href="#pablo" class="btn btn-success btn-round btn-lg">
+                                    <i class="fa fa-shopping-cart"></i> Shop Now
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-		<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-	</head>
+        <div class="">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-dark text-center">
+                    <h3 class="title">Welcome</h3>
+                    <h6 class="">
+                        Anema Mart is a foremost trading and agriculture company in Nigeria. We currently operate our businesses and outlets in Uyo, Akwa Ibom State, where we have established a foothold in the regional market, and are esteemed by our customers as the leading and trusted brand in retail.
+                    </h6>
+                    <br/>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h5 class="card-category text-center text">Creating Value</h5>
+                            <div class="card-icon">
+                            <i class="nc-icon nc-world-2"></i>
+                            </div>
+                            <p class="">
+                                Beyond achieving our business needs as a consumer goods trader,
+                                we seek to better lives by adding value to society through rural development and responsible sourcing. Through various sustainable programs, we support small-scale farmers in increasing capacity and efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h5 class="card-category text-center text">Who We Are</h5>
+                            <div class="card-icon">
+                                <i class="nc-icon nc-single-copy-04"></i>
+                            </div>
+                            <p class="">
+                                Anema Mart is a renowned brand with interests in Retail,
+                                Mechanized Farming and Food Processing. Established in 2012,
+                                it has developed into a trusted name for its products and services.
+                                The driving thrust of our business is to find newer and better ways to serve our customers, all the time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h5 class="card-category text-center text">Online Store</h5>
+                            <div class="card-icon">
+                                <i class="nc-icon nc-time-alarm"></i>
+                            </div>
+                            <p class="">
+                                Take advantage of our online store and access all our fabulous products!
+                                Our online inventory includes our selection of refrigerated, frozen,
+                                and non-perishable groceries, health and beauty products, home and gift items. Enjoy fast and easy shopping from the comfort of your homes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<body>
-		<div class="page-wrapper">
-			
-			<div class="preloader"></div>
-			
-			<header class="main-header header-style-one">
-				
-				<div class="header-upper">
-					<div class="auto-container">
-						<div class="clearfix">
-							
-							<div class="pull-left logo-outer mt3">
-								<div class="logo"><a class="" href="index.html"><img src="images/logo.png" style="width: 180px;" alt="" title=""></a></div>
-							</div>
-							
-							<div class="pull-right upper-right clearfix">
-								<div class="nav-outer clearfix">
-								
-									<nav class="main-menu navbar-expand-md">
-										<div class="navbar-header" >
-											<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-											</button>
-										</div>
+        <div class="blog-1" id="blog-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 ml-auto mr-auto">
+                        <h2 class="title">Latest Blogposts</h2>
+                        <br />
+                        <div class="card card-plain card-blog">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="card-image">
+                                        <img class="img" src="img/sections/stephanie-krist.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h6 class="card-category text-info">Enterprise</h6>
+                                        <h3 class="card-title">
+                                            <a href="#pablo">The four waves of augmented reality</a>
+                                        </h3>
+                                        <p class="card-description">
+                                            Sharing processing, display and sensors across smartphones and tethered smartglasses gives you two batteries, each powering fewer individual systems. If they’re connected by a cable, this could give a healthy bump to battery life — and…
+                                            <a href="#pablo"> Read More </a>
+                                        </p>
+                                        <p class="author">
+                                            by
+                                            <a href="#pablo">
+                                                <b>Tim Merel</b>
+                                            </a>, 11 hours ago
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-plain card-blog">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h6 class="card-category text-danger">
+                                            <i class="fa fa-free-code-camp" aria-hidden="true"></i> Trending
+                                        </h6>
+                                        <h3 class="card-title">
+                                            <a href="#pablo">Okoli connects you with tour guides around the world</a>
+                                        </h3>
+                                        <p class="card-description">
+                                            Okoli is a new service by developer Jack Deneut that aims to replace those ugly little cards you find in tourist hotels. The web app, which currently works in Prague, Budapest, Berlin and Paris, lets you reserve a nearly private tour with a professional guid — and…
+                                            <a href="#pablo"> Read More </a>
+                                        </p>
+                                        <p class="author">
+                                            by
+                                            <a href="#pablo">
+                                                <b>John Biggs</b>
+                                            </a>, 3 seconds ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-image">
+                                        <img class="img" src="img/sections/federico-beccari.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-										<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-											<ul class="navigation">
-												<li><a href="index.html">Home</a></li>
-												<li><a href="about.html">About us</a></li>
-												<li><a href="blog.html">Blog</a></li>
-											</ul>
-										</div>
-										
-									</nav>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+        <div class="separator"></div>
+        <footer class="footer footer-black footer-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 ml-auto mr-auto">
+                        <div class="logo text-center">
+                            <img src="img/logo.jpeg" alt="" style="width: 50px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-2 col-sm-8">
+                        <div class="links footer-text">
+                            <ul>
+                                <li>
+                                    <a>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Company
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr class="new"/>
+                            <div class="copyright">
+                                <div class="pull-left">
+                                    ©
+                                    <script>
+                                        document.write(new Date().getFullYear())
+                                    </script>
+                                </div>
+                                <div class="pull-right">
+                                    <ul>
+                                        <li>
+                                            <a>
+                                            Terms
+                                            </a>
+                                        </li>
+                                        |
+                                        <li>
+                                            <a>
+                                            Privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-			</header>
-			
-			<section class="main-banner">
-				<div class="auto-container">
-					<div class="row clearfix">
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column wow slideInLeft">
-								<h2>Front Office Automation</h2>
-								<div class="text font-weight-bold">Schedule Meetings, Share Calenders And Get Alerts.</div>
-							</div>
-						</div>
-
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="">
-									<img src="images/bg1.png" alt />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="faq-section">
-				<div class="auto-container">
-					
-					<div class="sec-title centered">
-						<h2>Features</h2>
-					</div>
-					
-					<div class="faq-carousel owl-carousel owl-theme">
-						
-						<div class="services-block">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="height: 400px;">
-								<div class="icon-box">
-									<span class=""><img src="images/favicon.png" alt /></span>
-								</div>
-								<h3><a>USER MANAGEMENT</a></h3>
-								<div class="text">Booking and Approval</div>
-								<div class="text">Profiling</div>
-								<div class="text">Calendar Integration</div>
-								<div class="text">Schedule Sharing</div>
-								<div class="text">Email and Application Notification</div>
-								<div class="text">Appointments Scheduling</div>
-								<div class="text">Email Management</div>
-							</div>
-						</div>
-						 
-						<div class="services-block">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms" style="height: 400px;">
-								<div class="icon-box">
-									<span class=""><img src="images/favicon.png" alt /></span>
-								</div>
-								<h3><a>ACCESS CONTROL</a></h3>
-								<div class="text">User Profiling</div>
-								<div class="text">Guest Profiling</div>
-								<div class="text">Tag Management</div>
-								<div class="text">Deliveries</div>
-								<div class="text">Devices</div>
-							</div>
-						</div>
-						
-						<div class="services-block">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms" style="height: 400px;">
-								<div class="icon-box">
-									<span class=""><img src="images/favicon.png" alt /></span>
-								</div>
-								<h3><a>SELF SERVICE</a></h3>
-								<div class="text">Console Device</div>
-								<div class="text">User Logging</div>
-								<div class="text">Tag Management</div>
-								<div class="text">Facial Recognition</div>
-								<div class="text">Profiling</div>
-							</div>
-						</div>
-
-						<div class="services-block">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms" style="height: 400px;">
-								<div class="icon-box">
-									<span class=""><img src="images/favicon.png" alt /></span>
-								</div>
-								<h3><a>CALENDAR INTEGRATION</a></h3>
-								<div class="text">Email notifications for both User and Guest</div>
-								<div class="text">Application / Web notification</div>
-								<div class="text">Thank you notification for guest</div>
-								
-							</div>
-						</div>
-
-						<div class="services-block">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="1500ms" data-wow-duration="1500ms" style="height: 400px;">
-								<div class="icon-box">
-									<span class=""><img src="images/favicon.png" alt /></span>
-								</div>
-								<h3><a>DETAILED REPORTING</a></h3>
-								<div class="text">User logging reports</div>
-								<div class="text">Guests logging reports</div>
-								<div class="text">Deliveries logging reports</div>
-								<div class="text">Devices logging reports</div>
-								<div class="text">Activity logging reports</div>
-							</div>
-						</div>						
-					</div>
-					
-				</div>
-			</section>
-
-			<!-- <section class="app-section style-two">
-				<div class="auto-container">
-					<div class="row clearfix">
-						<div class="image-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-							<div class="image">
-								<img src="images/bg2.png" alt />
-							</div>
-							</div>
-						</div>
-				
-						<div class="content-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<h2>Give your visitor a smart digitalized experience</h2>
-								<div class="text">
-									Make easy the arrival of your visitor by digitized check-in. 
-									Transform the check-in system from sloppy documentation to an interactive organized environment, 
-									You will completely change how companies interact and connect with consumers, allowing users to concentrate on their work, 
-									generating valuable customer interaction.
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			
-			<!--<section class="testimonial-section">
-				<div class="auto-container">
-					<div class="row clearfix">
-						
-						<div class="carousel-column col-lg-6 col-md-6 col-sm-12">
-							<h1 class="">Testimonial</h1>
-							<div class="inner-column">
-								<div class="single-item-carousel owl-carousel owl-theme">
-								
-									<div class="content">
-										<h3>John Doue</h2>
-										<div class="designation">Designer</div>
-										<div class="quote-icon flaticon-quote-2"></div>
-										<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximizePodcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deepdive on the integration.</div>
-									</div>
-									
-									<div class="content">
-										<h3>John Doue</h2>
-										<div class="designation">Designer</div>
-										<div class="quote-icon flaticon-quote-2"></div>
-										<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximizePodcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deepdive on the integration.</div>
-									</div>
-									
-									<div class="content">
-										<h3>John Doue</h3>
-										<div class="designation">Designer</div>
-										<div class="quote-icon flaticon-quote-2"></div>
-										<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximizePodcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deepdive on the integration.</div>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-							<div class="image-column col-lg-6 col-md-6 col-sm-12">
-							<div class="inner-column">
-								<div id="particles-js"></div>
-								<div class="author-one"><img src="images/resource/author-8.jpg" alt="" /></div>
-								<div class="author-two"><img src="images/resource/author-9.jpg" alt="" /></div>
-								<div class="author-three"><img src="images/resource/author-10.jpg" alt="" /></div>
-								<div class="author-four"><img src="images/resource/author-11.jpg" alt="" /></div>
-								<div class="author-five"><img src="images/resource/author-12.jpg" alt="" /></div>
-								<div class="author-six"><img src="images/resource/author-13.jpg" alt="" /></div>
-								<div class="author-seven"><img src="images/resource/author-14.jpg" alt="" /></div>
-								<div class="author-eight"><img src="images/resource/author-15.jpg" alt="" /></div>
-								<div class="author-nine"><img src="images/resource/author-16.jpg" alt="" /></div>
-								<div class="author-ten"><img src="images/resource/author-17.jpg" alt="" /></div>
-								<div class="author-eleven"><img src="images/resource/author-18.jpg" alt="" /></div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</section> -->
-			
-			
-			<section class="pricing-section">
-				<div class="auto-container">
-					
-					<div class="sec-title centered">
-						<h2>Easy Pricing Plans</h2>
-					</div>
-					
-					<div class="pricing-inner-container">
-						
-						
-						<div class="monthly-package">
-							<div class="row clearfix">
-								
-								<div class="price-block col-lg-4 col-md-6 col-sm-12">
-									<div class="inner-box">
-										<div class="title-box">
-											<h2>Basic</h2>
-										</div>
-										<div class="content-box" style="height: 500px;">
-											<div class="price"><sub>$</sub>5,260</div>
-											<div class="title">Annually</div>
-
-											<ul class="price-list text-left">
-												<li class="check"><span class="check fa fa-check"></span>User Profiling</li>
-												<li class="check"><span class="check fa fa-check"></span>User Login</li>
-												<li class="cross"><span class="check fa fa-check"></span>Guest Booking</li>
-												<li class="check"><span class="check fa fa-check"></span>Push Notifications</li>
-												<li class="check"><span class="check fa fa-check"></span>Reporting</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								
-								<div class="price-block col-lg-4 col-md-6 col-sm-12">
-									<div class="inner-box">
-										<div class="title-box">
-											<h2>Pro</h2>
-										</div>
-										<div class="content-box" style="height: 500px;">
-											<div class="price"><sub>$</sub>5,840</div>
-											<div class="title">Annually</div>
-											<div class="font-weight-bold text-left">Basic plus ...</div>
-
-											<ul class="price-list pt-2 text-left">
-												<li class="cross"><span class="check fa fa-check"></span>Calender</li>
-												<li class="cross"><span class="check fa fa-check"></span>Guest Profiling</li>
-												<li class="cross"><span class="check fa fa-check"></span>Tag Management</li>
-												<li class="cross"><span class="check fa fa-check"></span>Schedule Sharing</li>
-												
-											</ul>
-										</div>
-									</div>
-								</div>
-								
-								<div class="price-block col-lg-4 col-md-6 col-sm-12">
-									<div class="inner-box">
-										<div class="title-box">
-											<h2>Enterprise</h2>
-										</div>
-										<div class="content-box" style="height: 500px;">
-											<div class="price"><sub>$</sub>6,920</div>
-											<div class="title">Annually</div>
-											<div class="font-weight-bold text-left">Pro plus ...</div>
-
-											<ul class="price-list text-left">
-												<li class="check"><span class="check fa fa-check"></span>Schedule Sharing</li>
-												<li class="check"><span class="check fa fa-check"></span>Guest Approval</li>
-												<li class="check"><span class="check fa fa-check"></span>Access Control</li>
-												<li class="check"><span class="check fa fa-check"></span>Shared Resources</li>
-												<li class="check"><span class="check fa fa-check"></span>Devices & Deliveries</li>
-												<li class="check"><span class="check fa fa-check"></span>Self-Services (Console)</li>
-												<li class="check"><span class="check fa fa-check"></span>Event Invities & Access</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						
-						<!-- Yearly Package -->
-						<div class="yearly-package">
-							<div class="row clearfix">
-							
-								<div class="price-block col-lg-4 col-md-6 col-sm-12">
-									<div class="inner-box">
-										<div class="title-box">
-											<h2>Basic</h2>
-										</div>
-										<div class="content-box" style="height: 500px;">
-											<div class="price"><sub>$</sub>5,260</div>
-											<div class="title">Annually</div>
-
-											<ul class="price-list text-left">
-												<li class="check"><span class="check fa fa-check"></span>User Profiling</li>
-												<li class="cross"><span class="check fa fa-check"></span>Guest Booking</li>
-												<li class="check"><span class="check fa fa-check"></span>Push Notifications</li>
-												<li class="check"><span class="check fa fa-check"></span>Reporting</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								
-								<div class="price-block col-lg-4 col-md-6 col-sm-12">
-									<div class="inner-box">
-										<div class="title-box">
-											<h2>Pro</h2>
-										</div>
-										<div class="content-box" style="height: 500px;">
-											<div class="price"><sub>$</sub>5,840</div>
-											<div class="title">Annually</div>
-											<div class="font-weight-bold text-left">Basic plus ...</div>
-
-											<ul class="price-list pt-2 text-left">
-												<li class="cross"><span class="check fa fa-check"></span>Calender</li>
-												<li class="cross"><span class="check fa fa-check"></span>Guest Profiling</li>
-												<li class="cross"><span class="check fa fa-check"></span>Tag Management</li>
-												<li class="cross"><span class="check fa fa-check"></span>Schedule Sharing</li>
-												
-											</ul>
-										</div>
-									</div>
-								</div>
-								
-								<div class="price-block col-lg-4 col-md-6 col-sm-12">
-									<div class="inner-box">
-										<div class="title-box">
-											<h2>Enterprise</h2>
-										</div>
-										<div class="content-box" style="height: 500px;">
-											<div class="price"><sub>$</sub>6,920</div>
-											<div class="title">Annually</div>
-											<div class="font-weight-bold text-left">Pro plus ...</div>
-
-											<ul class="price-list text-left">
-												<li class="check"><span class="check fa fa-check"></span>Schedule Sharing</li>
-												<li class="check"><span class="check fa fa-check"></span>User Login</li>
-												<li class="check"><span class="check fa fa-check"></span>Guest Approval</li>
-												<li class="check"><span class="check fa fa-check"></span>Access Control</li>
-												<li class="check"><span class="check fa fa-check"></span>Shared Resources</li>
-												<li class="check"><span class="check fa fa-check"></span>Devices & Deliveries</li>
-												<li class="check"><span class="check fa fa-check"></span>Self-Services (Console)</li>
-												<li class="check"><span class="check fa fa-check"></span>Event Invities & Access</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						
-					</div>
-					
-					<!-- Pricing Option -->
-					<div class="pricing-option">
-						<div class="option-inner">
-							<span class="monthly">Monthly</span>
-							<span class="icon"></span>
-							<span class="yearly">Yearly</span>
-						</div>
-					</div>
-					
-				</div>
-			</section>
-			
-			<!-- <section class="app-section style-two">
-				<div class="auto-container">
-					<div class="row clearfix pb-5">
-						<div class="content-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<div class="image">
-									<img src="images/bg1.png" alt />
-								</div>
-							</div>
-						</div>
-						
-						<div class="content-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<h1>Sign In</h1>
-								<div class="contact-form">
-								
-									<div class="title-box">
-										<div class="title">Your email address will not be published. Required fields are marked *</div>
-									</div>
-									
-									<form method="post" action="http://t.commonsupport.com/alfena/sendemail.php" id="contact-form">
-										<div class="row clearfix">
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<input type="email" name="email" placeholder="Email*" required>
-											</div>
-											
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<input type="password" name="subject" placeholder="Password*" required>
-											</div>
-										
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<button class="theme-btn btn-style-two" type="submit" name="submit-form">Sign In <span class="icon flaticon-next-3"></span></button>
-											</div>
-										</div>
-									</form>
-										
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			
-			<section class="download-section" style="background-image:url(images/background/1.jpg)">
-				
-				<div class="auto-container">
-					<div class="title-box wow fadeInDown">
-						<h2>Download <span class="text-warning">v</span>Scheduler today</h2>
-						<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximize podcast operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. </div>
-					</div>
-
-					<div class="buttons-box">
-						<a href="#" class="theme-btn wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="images/badge-ios.png" style="width: 180px;" alt="" /></a>
-						<a href="#" class="theme-btn wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="images/badge-android.png" style="width: 180px;" alt="" /></a>
-					</div>
-				</div>
-			</section>
-
-			<section class="app-section style-two">
-				<div class="auto-container">
-					<div class="row clearfix pb-5">
-						<div class="content-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<h1>Contact Us</h1>
-									<div class="">
-										<div class="block-inner">
-											<ul>
-												<li>234 (0)90315000145</li>
-												<li>sales@vscheduler.com</li>
-											</ul>
-										</div>
-									</div>
-							</div>
-						</div>
-						
-						<div class="content-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<div class="contact-form">
-                                
-									<div class="title-box">
-										<h2>Leave us Your Comment</h2>
-										<div class="title">Your email address will not be published. Required fields are marked *</div>
-									</div>
-									
-									<form method="post" action="" id="contact-form">
-										<div class="row clearfix">
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<input type="text" name="username" placeholder="Name*" required>
-											</div>
-											
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<input type="email" name="email" placeholder="Email*" required>
-											</div>
-											
-											<div class="form-group col-lg-12 col-md-12 col-sm-12">
-												<input type="text" name="subject" placeholder="Subject*" required>
-											</div>
-											
-											<div class="form-group col-lg-12 col-md-12 col-sm-12">
-												<textarea class="darma" name="message" placeholder="Type Your Message *"></textarea>
-											</div>
-											
-											<div class="form-group col-lg-6 col-md-6 col-sm-12">
-												<button class="theme-btn btn-style-two" type="submit" name="submit-form">Send Now <span class="icon flaticon-next-3"></span></button>
-											</div>
-										</div>
-									</form>
-										
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="sponsors-section">
-				<div class="auto-container">
-					<div class="title-box">
-						<h2>Brands</h2>
-						<div class="title">Indicators offline to maximise the long tail. Keeping your eye on the ball </div>
-					</div>
-					
-					<div class="carousel-outer">
-						<ul class="sponsors-carousel owl-carousel owl-theme">
-							<li><div class="image-box"><a href="#"><img src="images/standard_logo.svg" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/download.png" alt=""></a></div></li>
-						</ul>
-					</div>
-					
-				</div>
-			</section>
-
-			<footer class="main-footer">
-				<div class="auto-container">
-					<div class="button-box">
-						<a class="theme-btn btn-style-two" href="signup.html">Sign up</a>
-					</div>
-					<div class="widgets-section container">
-						<div class="row justify-content-center">
-							
-							<div class="footer-column col-lg-4 col-12">
-								<div class="footer-widget links-widget">
-									<h2>ABOUT</h2>
-									<p class="footer-list">vScheduler is the most comprehensive system for end-to-end Visitor Management & Access Control.</p>
-								</div>
-							</div>
-							
-							<div class="footer-column col-lg-2 col-md-3 col">
-								<div class="footer-widget links-widget">
-									<h2>RESOURCES</h2>
-									<ul class="footer-list">
-										<li><a href="#">Get Started</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="#">Support</a></li>
-									</ul>
-								</div>
-							</div>
-							
-							<div class="footer-column col-lg-2 col-md-3 col">
-								<div class="footer-widget links-widget">
-									<h2>TERMS</h2>
-									<ul class="footer-list">
-										<li><a href="privacy.html">Privacy Policy</a></li>
-										<li><a href="terms.html">Terms of Service</a></li>
-										<li><a href="security.html">Security Practices</a></li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="footer-column col-lg-3 col-md-3 col">
-								<div class="footer-widget links-widget">
-									<h2>CONTACT</h2>
-									<ul class="footer-list">
-										<li>234 (0)90315000145</li>
-										<li>sales@vscheduler.com</li>
-									</ul>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="footer-bottom">
-					<div class="auto-container">
-						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" style="width: 180px" alt="" /></a>
-						</div>
-
-						<div class="copyright">Copyright © 2019 Vscheduler . All Rights Reserved.</div>
-
-						<div class="social-nav">
-							<a href="#"><span class="fa fa-facebook"></span></a>
-							<a href="#"><span class="fa fa-twitter"></span></a>
-							<a href="#"><span class="fa fa-google-plus"></span></a>
-							<a href="#"><span class="fa fa-pinterest"></span></a>
-							<a href="#"><span class="fa fa-dribbble"></span></a>
-						</div>
-					</div>
-				</div>
-			</footer>
-			
-		</div>
-
-
-		<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
-
-		<script src="js/jquery.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.fancybox.js"></script>
-		<script src="js/jquery-ui.js"></script>
-		<script src="js/owl.js"></script>
-		<script src="js/appear.js"></script>
-		<script src="js/wow.js"></script>
-		<script src="js/element-in-view.js"></script>
-		<script src="js/validate.js"></script>
-		<script src="js/paroller.js"></script>
-		<script src="js/particles.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/script.js"></script>
-
-	</body>
-
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min..js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-switch.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-tagsinput.js"></script>
+        <script src="js/bootstrap-selectpicker.js"></script>
+        <script src="js/bootstrap-datetimepicker.js"></script>
+        <script src="js/photoswipe.min.js.js"></script>
+        <script src="js/photoswipe-ui-default.min.js"></script>
+        <script src="js/init-gallery.js"></script>
+        <script src="js/asny-bootstrap.min.js"></script>
+        <script src="js/paper-kit.js"></script>
+    </body>
 </html>

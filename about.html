@@ -1,337 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="img//apple-icon.png">
+        <link rel="icon" type="image/png" href="img//favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>
+            Anema Mart
+        </title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+        <!--     Fonts and icons     -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <!-- CSS Files -->
+        <link  href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+        <link  href="css/paper-kit.css" rel="stylesheet" type="text/css" >
+        <link  href="css/style.css" rel="stylesheet" type="text/css" >
 
-	<head>
-		<meta charset="utf-8">
-		<title>vScheduler</title>
-		
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="header-2">
+            <nav class="navbar navbar-expand-lg text-red bg-dark">
+                <div class="container">
+                    <a class="navbar-brand">08135880220</a>
+                    <a class="navbar-brand"> Info@Anema.com</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a target="_blank" class="btn btn-link btn-neutral">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg pt-0 bg-success navbar-absolute">
+                <div class="container">
+                    <a class="navbar-brand mb-0">
+                        <img src="img/logo.jpeg" alt="" style="width: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                        <ul class="navbar-nav ml-auto">
+                            <a href="index.html" class="btn btn-link btn-neutral">Home</a>
+                            <a href="about.html" class="btn btn-link btn-neutral">About Us</a>
+                            <a href="store.html" class="btn btn-link btn-neutral">Online Store</a>
+                            <a href="new.html" class="btn btn-link btn-neutral">News & Events</a>
+                            <a href="contact.html" class="btn btn-link btn-neutral">Contact</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-		<link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <div class="page-header page-header-small" style="background-image: url('img/sections/gerrit-vermeulen.jpg');">
+            <div class="filter filter-danger"></div>
+            <div class="content-center">
+                <div class="container">
+                    <h1>Hello,
+                    <br /> Welcome To Anema Mart.</h1>
+                    <h3>Let us tell you more about what we do.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="section">
+                <div class="container">
+                    <h3 class="font-weight-bold title-uppercase">Introduction</h3>
+                    <p class="text-dark">
+                        Anema Mart is a foremost trading and agriculture company in Nigeria. 
+                        We currently operate our businesses and outlets in Uyo, Akwa Ibom State, where we have established a foothold in the regional market, 
+                        and are esteemed by our customers as the leading and trusted brand in retail.  Our core business pillars, mechanized farming and food processing, 
+                        represents our core business ideal; which is to provide quality and affordable food and allied products in every home in our operational area. 
+                        Essential commodities in nurturing of life, hence our blood red brand color. Our retail arm serves as the vehicle in delivering our mission and vision.
+                    </p>
+                    
+                    <h5 class="font-weight-bold pt-2 title-uppercase">We <i class="fa fa-heart heart"></i>&nbsp; what we do.</h5>
+                    <p class="text-dark">
+                        We pride ourselves in being the family brand. Everything we do is to put smiles on the faces of kids, parents and elderly alike. 
+                        We recognize family values and consistently reach out to our children in schools and orphanages via various support programs and platforms of ours. 
+                        We recognize children to be the future and we shall continue to actively promote values that encourage their positive growth, development and outlook on our society by every means we can, in and outside business.
+                    </p>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-		<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-	</head>
+                    <div class="col-12 my-4  text-center">
+                        <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i class="fa fa-dribbble"></i></a>
+                        <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    
+                    <div class="row coloured-cards">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-big-shadow">
+                                <div class="card" data-background="color" data-color="blue" data-radius="none">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold card-category">MISSION</h6>
+                                        <!-- <h4 class="card-title">
+                                            <a href="#paper-kit">Blue Card</a>
+                                        </h4> -->
+                                        <p class="card-description">
+                                            Being the best at delivering fresh, affordable, 
+                                            high quality and well packaged farm produce in a hygienic 
+                                            environment to our customers through world class retail outlets.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-big-shadow">
+                                <div class="card" data-background="color" data-color="green" data-radius="none">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold card-category">Vision</h6>
+                                        
+                                        <p class="card-description">
+                                        Providing easy access to quality food in major cities in Nigeria by 2025.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-big-shadow">
+                                <div class="card" data-background="color" data-color="yellow" data-radius="none">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold card-category">CORE VALUES</h6>
+                                        <p class="card-description">Customer satisfaction ,Sustainable partnership with our suppliers ,Integrity ,Hygiene </p>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
 
-	<body>
-		<div class="page-wrapper">
+                    <h5 class="font-weight-bold title-uppercase">Clients</h5>
+                    <p class="text-dark">
+                        We serve a wide range of clients across the Nigerian market and have packages and services tailored to meet each clients needs. 
+                        Our clients cuts across Individuals, shopping malls(Super stores), Local farmers, event planners and more.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-			<div class="preloader"></div>
+        <div class="separator"></div>
+        <footer class="footer footer-black footer-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 ml-auto mr-auto">
+                        <div class="logo text-center">
+                            <img src="img/logo.jpeg" alt="" style="width: 50px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-2 col-sm-8">
+                        <div class="links footer-text">
+                            <ul>
+                                <li>
+                                    <a>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Company
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr class="new"/>
+                            <div class="copyright">
+                                <div class="pull-left">
+                                    ©
+                                    <script>
+                                        document.write(new Date().getFullYear())
+                                    </script>
+                                </div>
+                                <div class="pull-right">
+                                    <ul>
+                                        <li>
+                                            <a>
+                                            Terms
+                                            </a>
+                                        </li>
+                                        |
+                                        <li>
+                                            <a>
+                                            Privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-			<header class="main-header header-style-one">
-					
-				<div class="header-upper">
-					<div class="auto-container">
-						<div class="clearfix">
-							
-							<div class="pull-left logo-outer mt3">
-								<div class="logo"><a class="" href="index.html"><img src="images/logo.png" style="width: 180px;" alt="" title=""></a></div>
-							</div>
-							
-							<div class="pull-right upper-right clearfix">
-								<div class="nav-outer clearfix">
-								
-									<nav class="main-menu navbar-expand-md">
-										<div class="navbar-header" >
-											<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-											</button>
-										</div>
-
-										<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-											<ul class="navigation">
-												<li><a href="index.html">Home</a></li>
-												<li><a href="about.html">About us</a></li>
-												<li><a href="blog.html">Blog</a></li>
-											</ul>
-										</div>
-										
-									</nav>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</header>
-
-			<section class="banner-section-three">
-				<div class="auto-container">
-					<div class="row clearfix">
-						
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column wow slideInLeft">
-								<h2>Showcase <br> your app with <span class="text-warning">v</span>Scheduler</h2>
-								<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</div>
-							</div>
-						</div>
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="">
-									<img src="images/bg1.png" alt />
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</section>
-
-			<section class="services-section">
-				<div class="auto-container">
-					<div class="sec-title centered">
-						<h2>The only app you will need</h2>
-					</div>
-					
-					<div class="row clearfix">
-						
-						<div class="services-block col-lg-3 col-md-6 col-sm-12">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="icon-box">
-									<span class="icon flaticon-locked"></span>
-								</div>
-								<h3><a href="feature.html">Safty</a></h3>
-								<div class="text">Efficiently unleash cross-media information without.</div>
-							</div>
-						</div>
-						
-						<div class="services-block col-lg-3 col-md-6 col-sm-12">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-								<div class="icon-box">
-									<span class="icon flaticon-speed-meter"></span>
-								</div>
-								<h3><a href="feature.html">Quick Access</a></h3>
-								<div class="text">Efficiently unleash cross-media information without.</div>
-							</div>
-						</div>
-						
-						<div class="services-block col-lg-3 col-md-6 col-sm-12">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-								<div class="icon-box">
-									<span class="icon flaticon-heart"></span>
-								</div>
-								<h3><a href="feature.html">Easily manage</a></h3>
-								<div class="text">Efficiently unleash cross-media information without.</div>
-							</div>
-						</div>
-						
-						<div class="services-block col-lg-3 col-md-6 col-sm-12">
-							<div class="inner-box wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
-								<div class="icon-box">
-									<span class="icon flaticon-like-1"></span>
-								</div>
-								<h3><a href="feature.html">24h Support</a></h3>
-								<div class="text">Efficiently unleash cross-media information without.</div>
-							</div>
-						</div>
-						
-					</div>
-					
-				</div>
-			</section>
-
-			<section class="app-section style-two">
-				<div class="auto-container">
-					<div class="row clearfix">
-						
-						<div class="image-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<div class="">
-									<img src="images/bg3.png" alt />
-								</div>
-							</div>
-						</div>
-						
-						<div class="content-column col-lg-6 col-md-12 col-md-12">
-							<div class="inner-column">
-								<h2>Dedicate yourself to the things <br> that really matter</h2>
-								<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.leveling customer service .</div>
-								
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</section>
-
-			<section class="testimonial-section">
-				<div class="auto-container">
-					<div class="row clearfix">
-						
-						<div class="carousel-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="big-letter">T</div>
-								<div class="single-item-carousel owl-carousel owl-theme">
-								
-									<div class="content">
-										<h2>John Doue</h2>
-										<div class="designation">Designer</div>
-										<div class="quote-icon flaticon-quote-2"></div>
-										<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximizePodcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deepdive on the integration.</div>
-									</div>
-									
-									<div class="content">
-										<h2>John Doue</h2>
-										<div class="designation">Designer</div>
-										<div class="quote-icon flaticon-quote-2"></div>
-										<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximizePodcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deepdive on the integration.</div>
-									</div>
-									
-									<div class="content">
-										<h2>John Doue</h2>
-										<div class="designation">Designer</div>
-										<div class="quote-icon flaticon-quote-2"></div>
-										<div class="text">Efficiently unleash cross-media information without cross-media value. Quickly maximizePodcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deepdive on the integration.</div>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-						<div class="image-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div id="particles-js"></div>
-								<div class="author-one"><img src="images/resource/author-8.jpg" alt="" /></div>
-								<div class="author-two"><img src="images/resource/author-9.jpg" alt="" /></div>
-								<div class="author-three"><img src="images/resource/author-10.jpg" alt="" /></div>
-								<div class="author-four"><img src="images/resource/author-11.jpg" alt="" /></div>
-								<div class="author-five"><img src="images/resource/author-12.jpg" alt="" /></div>
-								<div class="author-six"><img src="images/resource/author-13.jpg" alt="" /></div>
-								<div class="author-seven"><img src="images/resource/author-14.jpg" alt="" /></div>
-								<div class="author-eight"><img src="images/resource/author-15.jpg" alt="" /></div>
-								<div class="author-nine"><img src="images/resource/author-16.jpg" alt="" /></div>
-								<div class="author-ten"><img src="images/resource/author-17.jpg" alt="" /></div>
-								<div class="author-eleven"><img src="images/resource/author-18.jpg" alt="" /></div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</section>
-
-			<section class="screenshots-section">
-				<div class="auto-container">
-					<div class="sec-title text-center">
-						<h2>App Screen</h2>
-					</div>
-					
-					<div class="carousel-container">
-						<div class="carousel-outer">
-							<div class="screenshot-carousel owl-carousel owl-theme">
-								<div class="slide"><figure class="image"><a href="images/app1.jpeg" data-fancybox="screenshot" data-caption=""><img src="images/app1.jpeg" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app2.jpeg" data-fancybox="screenshot" data-caption=""><img src="images/app2.jpeg" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app3.jpeg" data-fancybox="screenshot" data-caption=""><img src="images/app3.jpeg" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app4.png" data-fancybox="screenshot" data-caption=""><img src="images/app4.png" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app5.png" data-fancybox="screenshot" data-caption=""><img src="images/app5.png" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app6.png" data-fancybox="screenshot" data-caption=""><img src="images/app6.png" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app7.png" data-fancybox="screenshot" data-caption=""><img src="images/app7.png" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app8.png" data-fancybox="screenshot" data-caption=""><img src="images/app8.png" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app1.jpeg" data-fancybox="screenshot" data-caption=""><img src="images/app1.jpeg" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app2.jpeg" data-fancybox="screenshot" data-caption=""><img src="images/app2.jpeg" alt=""></a></figure></div>
-								<div class="slide"><figure class="image"><a href="images/app3.jpeg" data-fancybox="screenshot" data-caption=""><img src="images/app3.jpeg" alt=""></a></figure></div>
-							</div>
-							
-							<div class="mockup-layer"></div>
-						</div>
-					</div>
-					
-				</div>
-			</section>
-
-			<footer class="main-footer">
-				<div class="auto-container">
-					<div class="button-box">
-						<a class="theme-btn btn-style-two" href="signup.html">Sign up</a>
-					</div>
-					<div class="widgets-section container">
-						<div class="row justify-content-center">
-							
-							<div class="footer-column col-lg-4 col-12">
-								<div class="footer-widget links-widget">
-									<h2>ABOUT</h2>
-									<p class="footer-list">vScheduler is the most comprehensive system for end-to-end Visitor Management & Access Control.</p>
-								</div>
-							</div>
-							
-							<div class="footer-column col-lg-2 col-md-3 col">
-								<div class="footer-widget links-widget">
-									<h2>RESOURCES</h2>
-									<ul class="footer-list">
-										<li><a href="#">Get Started</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="#">Support</a></li>
-									</ul>
-								</div>
-							</div>
-							
-							<div class="footer-column col-lg-2 col-md-3 col">
-								<div class="footer-widget links-widget">
-									<h2>TERMS</h2>
-									<ul class="footer-list">
-										<li><a href="privacy.html">Privacy Policy</a></li>
-										<li><a href="terms.html">Terms of Service</a></li>
-										<li><a href="security.html">Security Practices</a></li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="footer-column col-lg-3 col-md-3 col">
-								<div class="footer-widget links-widget">
-									<h2>CONTACT</h2>
-									<ul class="footer-list">
-										<li>234 (0)90315000145</li>
-										<li>sales@vscheduler.com</li>
-									</ul>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="footer-bottom">
-					<div class="auto-container">
-						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" style="width: 180px" alt="" /></a>
-						</div>
-
-						<div class="copyright">Copyright © 2019 Vscheduler . All Rights Reserved.</div>
-
-						<div class="social-nav">
-							<a href="#"><span class="fa fa-facebook"></span></a>
-							<a href="#"><span class="fa fa-twitter"></span></a>
-							<a href="#"><span class="fa fa-google-plus"></span></a>
-							<a href="#"><span class="fa fa-pinterest"></span></a>
-							<a href="#"><span class="fa fa-dribbble"></span></a>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-
-		<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
-
-		<script src="js/jquery.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.fancybox.js"></script>
-		<script src="js/jquery-ui.js"></script>
-		<script src="js/owl.js"></script>
-		<script src="js/element-in-view.js"></script>
-		<script src="js/appear.js"></script>
-		<script src="js/wow.js"></script>
-		<script src="js/paroller.js"></script>
-		<script src="js/particles.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/script.js"></script>
-
-	</body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min..js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-switch.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-tagsinput.js"></script>
+        <script src="js/bootstrap-selectpicker.js"></script>
+        <script src="js/bootstrap-datetimepicker.js"></script>
+        <script src="js/photoswipe.min.js.js"></script>
+        <script src="js/photoswipe-ui-default.min.js"></script>
+        <script src="js/init-gallery.js"></script>
+        <script src="js/asny-bootstrap.min.js"></script>
+        <script src="js/paper-kit.js"></script>
+    </body>
 </html>
