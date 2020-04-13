@@ -33,3 +33,7 @@ p {
 .black {
     font-weight: 800px;
 }
+
+.icon {
+    font-size: 30px !important;
+}
