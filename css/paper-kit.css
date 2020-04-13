@@ -956,7 +956,6 @@ select.selectpicker {
   font-weight: 500;
   display: inline-block;
   line-height: 1.5em;
-  text-transform: uppercase;
 }
 
 .bootstrap-tagsinput .badge:hover {
@@ -1377,7 +1376,6 @@ select.selectpicker {
   text-align: center;
   border-bottom: 1px solid #E3E3E3;
   font-size: 12px;
-  text-transform: uppercase;
   color: #9A9A9A;
   font-weight: 400;
   padding-bottom: 5px;
@@ -2396,7 +2394,6 @@ License - nucleoapp.com/license/
   color: #FFFFFF;
   font-weight: 500;
   font-size: 0.75em;
-  text-transform: uppercase;
   display: inline-block;
   margin-bottom: 3px;
   padding-top: 5px;
@@ -2689,7 +2686,6 @@ License - nucleoapp.com/license/
 
 .nav-text>li>a {
   font-size: 0.9em;
-  text-transform: uppercase;
   padding: 3px 0;
   text-align: left;
   font-weight: 500;
@@ -2926,7 +2922,6 @@ h3 .small {
 }
 
 .title-uppercase {
-  text-transform: uppercase;
 }
 
 .description {
@@ -3304,7 +3299,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
   padding: 0.5rem 18px;
   line-height: 1.75;
   cursor: pointer;
-  text-transform: uppercase;
   background-color: #66615B;
   border-color: #66615B;
   color: #FFFFFF;
@@ -6299,8 +6293,7 @@ textarea.form-control {
   margin: 5px 0px;
   padding: 20px 15px;
   font-size: 14px;
-  color: #66615B;
-  text-transform: uppercase;
+  color: white;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -6309,7 +6302,6 @@ textarea.form-control {
   padding: 10px 15px;
   opacity: .8;
   font-size: 12px;
-  text-transform: uppercase;
   font-weight: 600;
   color: #66615B;
 }
@@ -6449,8 +6441,7 @@ textarea.form-control {
   margin: 5px 0px;
   padding: 10px 15px;
   font-size: 14px;
-  color: #66615B;
-  text-transform: uppercase;
+  color: white;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -6459,7 +6450,6 @@ textarea.form-control {
   padding: 10px 15px;
   opacity: .8;
   font-size: 12px;
-  text-transform: uppercase;
   font-weight: 600;
   color: #66615B;
 }
@@ -6798,12 +6788,12 @@ textarea.form-control {
 }
 
 .navbar-default .navbar-brand {
-  color: #66615B;
+  color: white;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: white;
 }
 
 .navbar-collapse.show .navbar-nav .nav-item {
@@ -7600,7 +7590,6 @@ textarea.form-control {
   font-weight: 500;
   display: inline-block;
   line-height: 1.5em;
-  text-transform: uppercase;
 }
 
 .bootstrap-tagsinput .badge:hover {
@@ -8539,7 +8528,6 @@ textarea.form-control {
   line-height: 1.6;
   opacity: .8;
   font-size: 12px;
-  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -8604,7 +8592,6 @@ textarea.form-control {
 }
 
 .footer .links ul.uppercase-links {
-  text-transform: uppercase;
 }
 
 .footer .links ul.stacked-links {
@@ -9218,7 +9205,6 @@ video {
 }
 
 .card .card-title-uppercase {
-  text-transform: uppercase;
 }
 
 .card .header {
@@ -11287,7 +11273,6 @@ a.pswp__share--download:hover {
 .section-isometricGrids .section__heading em {
   font-family: sans-serif;
   font-style: normal;
-  text-transform: uppercase;
   font-size: 0.3em;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
@@ -11555,7 +11540,6 @@ a.pswp__share--download:hover {
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
   opacity: 0;
   color: #fff;
   -webkit-transform: translate3d(0, -20px, 0);
@@ -11666,7 +11650,6 @@ a.pswp__share--download:hover {
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
   opacity: 0;
   color: #fff;
   -webkit-transform: translate3d(0, -20px, 0);
@@ -12604,7 +12587,7 @@ a.pswp__share--download:hover {
 }
 
 .search-page .navbar-transparent .navbar-brand {
-  color: #66615b;
+  color: white;
 }
 
 .search-page .navbar-transparent .navbar-toggle .icon-bar {
@@ -13326,7 +13309,6 @@ body {
   background: rgba(0, 0, 0, 0.53);
   font-size: 10px;
   border-radius: 20px;
-  text-transform: uppercase;
   font-weight: 600;
   opacity: 0;
   -webkit-transform-origin: 100% 50%;
@@ -14470,7 +14452,6 @@ body {
   .navbar-collapse .navbar-nav>.nav-item>.nav-link {
     margin: 0px 0px;
     color: #9A9A9A !important;
-    text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.5em;
