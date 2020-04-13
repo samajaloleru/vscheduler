@@ -2325,10 +2325,10 @@ License - nucleoapp.com/license/
   cursor: not-allowed;
 }
 
-.form-check .form-check-label input[type="checkbox"]:disabled+.form-check-sign,
+/* .form-check input[type="checkbox"]:disabled+.form-check-sign,
 .form-check-radio input[type="radio"]:disabled+.form-check-sign {
   pointer-events: none !important;
-}
+} */
 
 .form-check-radio {
   margin-left: -3px;
@@ -2357,9 +2357,6 @@ License - nucleoapp.com/license/
   top: -5px;
 }
 
-.form-check-label input[type="checkbox"]:checked+.form-check-sign:before {
-  background-color: #66615B;
-}
 
 .form-check-radio input[type="radio"]+.form-check-sign:after,
 .form-check-radio input[type="radio"] {
@@ -9606,7 +9603,9 @@ video {
 }
 
 .card-refine .panel-title {
-  font-size: 1em;
+  font-size: 1.26em;
+  color: #000000;
+  font-weight: 900px;
 }
 
 .card-background {
