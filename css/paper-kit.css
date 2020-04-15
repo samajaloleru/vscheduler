@@ -14422,7 +14422,8 @@ body {
     right: 0;
     z-index: 1032;
     visibility: visible;
-    background-color: #999;
+    color: white !important;
+    background-color: #13251B;
     overflow-y: visible;
     border-top: none;
     text-align: left;
@@ -14451,7 +14452,7 @@ body {
   }
   .navbar-collapse .navbar-nav>.nav-item>.nav-link {
     margin: 0px 0px;
-    color: #9A9A9A !important;
+    color: rgb(0, 0, 0) !important;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.5em;
@@ -14467,7 +14468,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #FFFCF5;
+    background-color:#13251B;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
     display: block;
     content: "";
@@ -14674,7 +14675,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #FFFCF5;
+    background-color: rgb(32, 23, 1);
     background-image: linear-gradient(to bottom, transparent 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
     display: block;
     content: "";
