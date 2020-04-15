@@ -10,7 +10,8 @@
         </title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!--     Fonts and icons     -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
         <!-- CSS Files -->
         <link  href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
@@ -26,7 +27,7 @@
                         <i class="fa icon1 mr-3 fa-envelope"></i>
                         service@anemacitymall.com
                     </a>
-                    <a class="navbar-brand white">7 days delivery, 10am-5pm</a>
+                    <a class="navbar-brand white">7 days delivery, 10am - 5pm</a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar"></span>
                         <span class="navbar-toggler-bar"></span>
@@ -64,13 +65,76 @@
                                 </form>
                             </li>
                             <a class="btn btn-link btn-neutral">
-                                <i class="icon fa fa-shopping-cart mr-3"></i>
-                                My Basket</a>
-                            <a class="btn btn-link btn-neutral">
-                                <i class="icon mr-3 fa fa-user"></i>
-                                Login /Register
+                                <i class="icon fa fa-shopping-cart mr-2"></i>
+                                <span class="nav-text">My Basket</span>
+                            </a>
+                            <a type="button" class="btn btn-link btn-neutral" data-toggle="modal" data-target="#loginModal">
+                                <i class="icon mr-1 fa fa-user"></i>
+                                <span class="nav-text">Login /Register</span>
                             </a>
                         </ul>
+                        <!-- login modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-register">
+                                <div class="modal-content bg-success">
+                                    <div class="modal-header no-border-header text-center">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5 class="black">Welcome</h5>
+                                        <img class="pb-1 text-center" src="img/logo.jpg" alt="" style="width: 150px;">
+                                        <p class="black">Log in to your account</p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" value="" placeholder="Email" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" value="" placeholder="Password" class="form-control" />
+                                        </div>
+                                        <button class="btn btn-block btn-round"> Log in</button>
+                                    </div>
+                                    <div class="modal-footer no-border-footer">
+                                        <span class="text-center">Looking to
+                                            <a data-toggle="modal" href="#myModal2" class="text-white">create an account</a> 
+                                            ?
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- register modal -->
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-register">
+                                <div class="modal-content bg-success">
+                                    <div class="modal-header no-border-header text-center">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h6 class="black">Register</h6>
+                                        <img class="pb-1 text-center" src="img/logo.jpg" alt="" style="width: 150px;">
+                                        <p>Create your account free and secure</p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" value="" placeholder="Email" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" value="" placeholder="Password" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Confirm Password</label>
+                                            <input type="password" value="" placeholder="Confirm Password" class="form-control" />
+                                        </div>
+                                        <button class="btn btn-block btn-round">Register</button>
+                                    </div>
+                                    <div class="modal-footer no-border-footer"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -78,114 +142,18 @@
 
         <div class="main">
             <div class="section pt-0">
-                <div class="container-fluid py-5 bg-danger">
-                    <div class="row">
-                        <div class="col-lg-2 px-2 col-sm-3">
-                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
-                                Food Cupboard
-                                <b class="caret"></b>
-                            </div>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item">Breakfast Cereals</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Rice</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pasta & Noodles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Swallow</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Salt & Spices</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Sugar & Sweeteners</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pancake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Custard & Jelly</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Beans Seeds & Grains</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Olives & Pickles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Soup</a>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 px-2 col-sm-3">
-                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
-                                Fresh Food
-                                <b class="caret"></b>
-                            </div>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item">Bread</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Eggs</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cheese</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Swallow</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Salt & Spices</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Sugar & Sweeteners</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pancake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Custard & Jelly</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Beans Seeds & Grains</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Olives & Pickles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Soup</a>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 px-2 col-sm-3">
-                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
-                                Wineries & Spirit
-                                <b class="caret"></b>
-                            </div>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item">Breakfast Cereals</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Rice</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pasta & Noodles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Swallow</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Salt & Spices</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Sugar & Sweeteners</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pancake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Custard & Jelly</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Beans Seeds & Grains</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Olives & Pickles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Soup</a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
+               
+                <div class="container-fluid bg-page px-5">
                     <div class="row p-4 ">
                         <div class="col-12">
-                            <h5>
-                                <small>Home / Shop</small>
+                            <h5 class="black font-weight-bold">
+                                Home / Shop
                             </h5>
                             <div class="row">
-                                <div class="col-md-4 col-sm-4 col-6">
+                                <div class="col-md-2 col-sm-2 col-6">
                                     <div class="card card-refine">
                                         <div class="panel-group" id="accordion" aria-expanded="true">
-                                            <div class="card-header card-collapse" role="tab" data-toggle="tab"  id="clothingGear">
+                                            <div class="card-header card-collapse" role="tab" data-toggle="tab"  id="food">
                                                 <h6 class="mb-0 panel-title black">
                                                     <a class="font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#clothing" aria-expanded="true" aria-controls="collapseOne">
                                                         Food Cupboard
@@ -511,6 +479,37 @@
                                                 </div>
                                             </div>
 
+                                            <div class="card-header card-collapse" role="tab" id="health">
+                                                <h6 class="mb-0 panel-title">
+                                                    <a class="font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#healthMaker" aria-expanded="true" aria-controls="collapseTree">
+                                                        Health & Beauty
+                                                        <i class="nc-icon nc-minimal-down"></i>
+                                                    </a>
+                                                </h6>
+                                            </div>
+
+                                            <div id="healthMaker" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-body">
+                                                    <p>Supplement</p>
+                                                    <p>Organic & Natural Foods</p>
+                                                    <p>Makeup Accessories</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-header card-collapse" role="tab" id="appar">
+                                                <h6 class="mb-0 panel-title">
+                                                    <a class="font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#apparMaker" aria-expanded="true" aria-controls="collapseTree">
+                                                        Apparels & Shoes
+                                                        <i class="nc-icon nc-minimal-down"></i>
+                                                    </a>
+                                                </h6>
+                                            </div>
+
+                                            <div id="apparMaker" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-body">
+                                                    <p>Men</p>
+                                                    <p>Women</p>
+                                                </div>
+                                            </div>
                                             <div class="card-header card-collapse" role="tab" id="ungroup">
                                                 <h6 class="mb-0 panel-title">
                                                     <a class="font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#ungroupMaker" aria-expanded="true" aria-controls="collapseTree">
@@ -551,13 +550,151 @@
                                         </div>
                                     </div> -->
                                 </div>
-                                <div class="col-md-8 col-sm-8 col-6">
+                                <div class="col-md-10 col-sm-10 col-6">
+                                    <div class="row pb-5">
+                                        <div class="col-6">
+                                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner" role="listbox">
+                                                    <div class="carousel-item active">
+                                                    <div class="page-header page-header-xs" style="background-image: url('img/bgslide1.jpg');">
+                                                        <div class="filter"></div>
+                                                        <div class="content-center">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 text-left">
+                                                                        <h3 class="font-weight-bold">We Got Everything You need</h3>
+                                                                        <br />
+                                                                        <div class="buttons float-right">
+                                                                            <a href="#pablo" class="btn btn-danger btn-round btn-lg">
+                                                                                Shop Now
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                    <div class="page-header page-header-xs" style="background-image: url('img/bgslide1.jpg')">
+                                                        <div class="filter"></div>
+                                                        <div class="content-center">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 ml-auto mr-auto text-center">
+                                                                        <h1 class="title font-weight-bold">WE'RE OPEN</h1>
+                                                                        <h5 class="font-weight-bold">
+                                                                            Stay Home, Stay Safe 
+                                                                        </h5>
+                                                                        <br />
+                                                                        <h6 class="font-weight-bold">We'll get all your groceries to you</h6>
+                                                                        <div class="buttons float-right">
+                                                                            <a href="#pablo" class="btn btn-danger btn-round btn-lg">
+                                                                                Shop Now
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                    <div class="page-header page-header-xs" style="background-image: url('img/bgslide.jpg')">
+                                                        <div class="filter"></div>
+                                                        <div class="content-center">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                            <div class="col-md-7 ml-auto text-right">
+                                                                <h2 class="title">Premium Offers for Venice</h2>
+                                                                <h5>Now you have no excuses, it's time to surprise your clients, your competitors, and why not, the world. You probably won't have a better chance to show off all your potential if it's not by designing a website for your own agency or web studio.</h5>
+                                                                <br />
+                                                                <div class="buttons">
+                                                                <a href="#pablo" class="btn btn-neutral btn-link btn-lg">
+                                                                    <i class="fa fa-share-alt"></i> Share Offer
+                                                                </a>
+                                                                <a href="#pablo" class="btn btn-success btn-round btn-lg">
+                                                                    <i class="fa fa-shopping-cart"></i> Shop Now
+                                                                </a>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                    <span class="fa fa-angle-left"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                    <span class="fa fa-angle-right"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner" role="listbox">
+                                                    <div class="carousel-item active">
+                                                    <div class="page-header page-header-xs" style="background-image: url('img/banner.jpg');">
+                                                        <div class="filter"></div>
+                                                        <div class="content-center">
+                                                            <div class="container">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="page-header page-header-xs" style="background-image: url('img/bgslide.jpg')">
+                                                            <div class="filter"></div>
+                                                            <div class="content-center">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="page-header page-header-xs" style="background-image: url('img/bgslide1.jpg')">
+                                                            <div class="filter"></div>
+                                                            <div class="content-center">
+                                                                <div class="container">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                    <span class="fa fa-angle-left"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                    <span class="fa fa-angle-right"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                     <!-- Tab panes -->
                                     <div class="tab-content">
-                                        <div class="tab-pane active" id="clothing">
+                                        <div class="tab-pane active" href="#food">
+                                            <h5 class="bg-success pa3 black pl-2">Food Cupboard</h5>
                                             <div class="products">
                                                 <div class="row">
-                                                    <div class="col-md-4 col-sm-4">
+                                                    <div class="col-md-2 col-sm-2">
                                                         <div class="card card-product card-plain">
                                                             <div class="card-image">
                                                                 <a href="">
@@ -578,7 +715,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 col-sm-4">
+                                                    <div class="col-md-2 col-sm-2">
                                                         <div class="card card-product card-plain">
                                                             <div class="card-image">
                                                                 <a href="">
@@ -599,7 +736,70 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 col-sm-4">
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <div class="card card-product card-plain">
+                                                            <div class="card-image">
+                                                                <a href="">
+                                                                    <img src="img/cream2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                                </a>
+                                                                <div class="card-body">
+                                                                    <div class="card-description">
+                                                                        <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
+                                                                        <p class="card-description">Dresses & Skirts</p>
+                                                                    </div>
+                                                                    <div class="price">
+                                                                        <h6>1.500 &euro;</h6>
+                                                                    </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <div class="card card-product card-plain">
+                                                            <div class="card-image">
+                                                                <a href="">
+                                                                    <img src="img/cream.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                                </a>
+                                                                <div class="card-body">
+                                                                    <div class="card-description">
+                                                                        <h6 class="font-weight-bold">One Shoulder Dress</h6>
+                                                                        <p class="card-description">Dresses & Skirts</p>
+                                                                    </div>
+                                                                    <div class="price">
+                                                                        <h6>2.900 &euro;</h6>
+                                                                    </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <div class="card card-product card-plain">
+                                                            <div class="card-image">
+                                                                <a href="">
+                                                                    <img src="img/cream11.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                                </a>
+                                                                <div class="card-body">
+                                                                    <div class="card-description">
+                                                                        <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
+                                                                        <p class="card-description">Dresses & Skirts</p>
+                                                                    </div>
+                                                                    <div class="price">
+                                                                        <h6>1.700 &euro;</h6>
+                                                                    </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
                                                         <div class="card card-product card-plain">
                                                             <div class="card-image">
                                                                 <a href="">
@@ -622,7 +822,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-4 col-sm-4">
+                                                    <div class="col-md-2 col-sm-2">
                                                         <div class="card card-product card-plain">
                                                             <div class="card-image">
                                                                 <a href="">
@@ -643,7 +843,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 col-sm-4">
+                                                    <div class="col-md-2 col-sm-2">
                                                         <div class="card card-product card-plain">
                                                             <div class="card-image">
                                                                 <a href="">
@@ -664,7 +864,70 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 col-sm-4">
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <div class="card card-product card-plain">
+                                                            <div class="card-image">
+                                                                <a href="">
+                                                                    <img src="img/cream2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                                </a>
+                                                                <div class="card-body">
+                                                                    <div class="card-description">
+                                                                        <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
+                                                                        <p class="card-description">Dresses & Skirts</p>
+                                                                    </div>
+                                                                    <div class="price">
+                                                                        <h6>1.500 &euro;</h6>
+                                                                    </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <div class="card card-product card-plain">
+                                                            <div class="card-image">
+                                                                <a href="">
+                                                                    <img src="img/cream.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                                </a>
+                                                                <div class="card-body">
+                                                                    <div class="card-description">
+                                                                        <h6 class="font-weight-bold">One Shoulder Dress</h6>
+                                                                        <p class="card-description">Dresses & Skirts</p>
+                                                                    </div>
+                                                                    <div class="price">
+                                                                        <h6>2.900 &euro;</h6>
+                                                                    </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <div class="card card-product card-plain">
+                                                            <div class="card-image">
+                                                                <a href="">
+                                                                    <img src="img/cream11.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                                </a>
+                                                                <div class="card-body">
+                                                                    <div class="card-description">
+                                                                        <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
+                                                                        <p class="card-description">Dresses & Skirts</p>
+                                                                    </div>
+                                                                    <div class="price">
+                                                                        <h6>1.700 &euro;</h6>
+                                                                    </div>
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
                                                         <div class="card card-product card-plain">
                                                             <div class="card-image">
                                                                 <a href="">
@@ -688,133 +951,257 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="description">
-                                            <div class="products">
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <div class="card card-product card-plain">
-                                                            <div class="card-image">
-                                                                <a href="">
-                                                                    <img src="img/cream12.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <div class="card-description">
-                                                                        <h6 class="font-weight-bold">One Shoulder Dress</h6>
-                                                                        <p class="card-description">Dresses & Skirts</p>
-                                                                    </div>
-                                                                    <div class="price">
-                                                                        <h6>2.900 &euro;</h6>
-                                                                    </div>
-                                                                    <div class="col-12 text-center">
-                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
-                                                                    </div>
+                                        <div class="products">
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream12.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">One Shoulder Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <div class="card card-product card-plain">
-                                                            <div class="card-image">
-                                                                <a href="">
-                                                                    <img src="img/cream13.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <div class="card-description">
-                                                                        <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
-                                                                        <p class="card-description">Dresses & Skirts</p>
-                                                                    </div>
-                                                                    <div class="price">
-                                                                        <h6>1.700 &euro;</h6>
-                                                                    </div>
-                                                                    <div class="col-12 text-center">
-                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
-                                                                    </div>
+                                                                <div class="price">
+                                                                    <h6>2.900 &euro;</h6>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <div class="card card-product card-plain">
-                                                            <div class="card-image">
-                                                                <a href="">
-                                                                    <img src="img/cream4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <div class="card-description">
-                                                                        <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
-                                                                        <p class="card-description">Dresses & Skirts</p>
-                                                                    </div>
-                                                                    <div class="price">
-                                                                        <h6>1.500 &euro;</h6>
-                                                                    </div>
-                                                                    <div class="col-12 text-center">
-                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
-                                                                    </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <div class="card card-product card-plain">
-                                                            <div class="card-image">
-                                                                <a href="">
-                                                                    <img src="img/cream12.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <div class="card-description">
-                                                                        <h6 class="font-weight-bold">One Shoulder Dress</h6>
-                                                                        <p class="card-description">Dresses & Skirts</p>
-                                                                    </div>
-                                                                    <div class="price">
-                                                                        <h6>2.900 &euro;</h6>
-                                                                    </div>
-                                                                    <div class="col-12 text-center">
-                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
-                                                                    </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream13.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.700 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <div class="card card-product card-plain">
-                                                            <div class="card-image">
-                                                                <a href="">
-                                                                    <img src="img/cream13.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <div class="card-description">
-                                                                        <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
-                                                                        <p class="card-description">Dresses & Skirts</p>
-                                                                    </div>
-                                                                    <div class="price">
-                                                                        <h6>1.700 &euro;</h6>
-                                                                    </div>
-                                                                    <div class="col-12 text-center">
-                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
-                                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.500 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4 col-sm-4">
-                                                        <div class="card card-product card-plain">
-                                                            <div class="card-image">
-                                                                <a href="">
-                                                                    <img src="img/cream4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                                                </a>
-                                                                <div class="card-body">
-                                                                    <div class="card-description">
-                                                                        <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
-                                                                        <p class="card-description">Dresses & Skirts</p>
-                                                                    </div>
-                                                                    <div class="price">
-                                                                        <h6>1.500 &euro;</h6>
-                                                                    </div>
-                                                                    <div class="col-12 text-center">
-                                                                        <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
-                                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream12.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">One Shoulder Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>2.900 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream13.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.700 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.500 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream12.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">One Shoulder Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>2.900 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream13.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.700 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.500 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream12.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">One Shoulder Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>2.900 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream13.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Stretch-Knit Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.700 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2">
+                                                    <div class="card card-product card-plain">
+                                                        <div class="card-image">
+                                                            <a href="">
+                                                                <img src="img/cream4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                                                            </a>
+                                                            <div class="card-body">
+                                                                <div class="card-description">
+                                                                    <h6 class="font-weight-bold">Chrystal Sheer Dress</h6>
+                                                                    <p class="card-description">Dresses & Skirts</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                    <h6>1.500 &euro;</h6>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="button" class="btn btn-sm btn-outline-success btn-round">Buy Now</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -922,72 +1309,140 @@
 
         <div class="separator"></div>
         <footer class="footer footer-black footer-big">
-            <div class="container">
+            <div class="container px-5">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 ml-auto mr-auto">
-                        <div class="logo text-center">
-                            <img src="img/logo.jpg" alt="" style="width: 150px;">
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-2 col-sm-8">
-                        <div class="links footer-text">
-                            <ul>
-                                <li>
-                                    <a>
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        Company
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        Portfolio
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        Team
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                            <hr class="new"/>
-                            <div class="copyright">
-                                <div class="pull-left">
-                                    ©
-                                    <script>
-                                        document.write(new Date().getFullYear())
-                                    </script>
+                    <div class="col-12 ">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="links">
+                                    <img src="img/logo.jpg" alt="" style="width: 150px;">
+                                    <p class="white text-left pt-3">
+                                        Contact: 08126432202, 08061347511, 08032461836
+                                    </p>
+                                    <p class="white px-0">
+                                        <i class="fa icon1 fa-map-marker"></i>
+                                        <span class="font-weight-bold">Our Outlets,</span>
+                                        <br/>
+                                        29 NEPA Line, Uyo Akwa Ibom State / Anema City Mart, 
+                                        <br/>
+                                        5 Osongama Road Behind Emerald Event Center , Osongama Estate , Uyo
+                                    </p>
                                 </div>
-                                <div class="pull-right">
-                                    <ul>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-6 pl-5">
+                                <div class="links">
+                                    <ul class="uppercase-links stacked-links">
                                         <li>
-                                            <a>
-                                            Terms
+                                            <a href="#paper-kit">
+                                            Home
                                             </a>
                                         </li>
-                                        |
                                         <li>
-                                            <a>
-                                            Privacy
+                                            <a href="#paper-kit">
+                                            Discover
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#paper-kit">
+                                            Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#paper-kit">
+                                            Live Support
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#paper-kit">
+                                            Money Back
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="links">
+                                    <ul class="uppercase-links stacked-links">
+                                        <li>
+                                            <a href="#paper-kit" class="col-12">
+                                                <h4>Contact Us</h4>
+                                                <div class="separator"></div>
+                                                <div class="subscribe-line subscribe-line-black">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <form class="">
+                                                                    <div class="form-group">
+                                                                        <input type="text" value="" class="form-control" placeholder="Enter your email...">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <button type="button" class="btn btn-neutral btn-block btn-lg">Join Newsletter</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        <hr />
+                        <div class="copyright">
+                            <div class="pull-left">
+                                &copy;
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> made with love
+                            </div>
+                            <div class="links pull-right">
+                                <ul>
+                                    <li>
+                                        <a href="#paper-kit">
+                                            Company Policy
+                                        </a>
+                                    </li>
+                                    |
+                                    <li>
+                                        <a href="#paper-kit">
+                                            Terms
+                                        </a>
+                                    </li>
+                                    |
+                                    <li>
+                                        <a href="#paper-kit">
+                                            Privacy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <script>
+            $(document).ready(function () {
 
+                $('#openBtn').click(function () {
+                    $('#myModal').modal({
+                        show: true
+                    })
+                });
+            
+                    $(document).on('show.bs.modal', '.modal', function (event) {
+                        var zIndex = 1040 + (10 * $('.modal:visible').length);
+                        $(this).css('z-index', zIndex);
+                        setTimeout(function() {
+                            $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+                        }, 0);
+                    });
+            
+            
+            });
+        </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

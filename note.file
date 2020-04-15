@@ -1,0 +1,97 @@
+ <div class="container-fluid py-5 bg-danger">
+                    <div class="row">
+                        <div class="col-lg-2 px-2 col-sm-3">
+                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
+                                Food Cupboard
+                                <b class="caret"></b>
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item">Breakfast Cereals</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Rice</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Pasta & Noodles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Swallow</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Salt & Spices</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Sugar & Sweeteners</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Cake</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Pancake</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Custard & Jelly</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Beans Seeds & Grains</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Olives & Pickles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Soup</a>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 px-2 col-sm-3">
+                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
+                                Fresh Food
+                                <b class="caret"></b>
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item">Bread</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Eggs</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Cheese</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Swallow</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Salt & Spices</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Sugar & Sweeteners</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Cake</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Pancake</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Custard & Jelly</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Beans Seeds & Grains</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Olives & Pickles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Soup</a>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 px-2 col-sm-3">
+                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
+                                Wineries & Spirit
+                                <b class="caret"></b>
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item">Breakfast Cereals</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Rice</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Pasta & Noodles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Swallow</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Salt & Spices</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Sugar & Sweeteners</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Cake</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Pancake</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Custard & Jelly</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Beans Seeds & Grains</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Olives & Pickles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Soup</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>

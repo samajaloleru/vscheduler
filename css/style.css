@@ -34,6 +34,14 @@ p {
     color: white !important;
 }
 
+.black {
+    color:black !important;
+}
+
+.nav-text {
+    font-size: 15px;
+}
+
 .text-white {
     color: white !important;
     font-size: 16px;
@@ -41,6 +49,10 @@ p {
     padding: 14px;
 }
 
+.bg-page {
+    
+    background-color: rgb(255, 235, 218, 0.4);
+}
 
 .icon {
     font-size: 30px !important;
@@ -48,4 +60,5 @@ p {
 
 .icon1 {
     font-size: 25px !important;
+    color: white;
 }
