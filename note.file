@@ -1,97 +1,82 @@
- <div class="container-fluid py-5 bg-danger">
-                    <div class="row">
-                        <div class="col-lg-2 px-2 col-sm-3">
-                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
-                                Food Cupboard
-                                <b class="caret"></b>
+<div class="section pt-0 mt-0">
+                <div class="container">
+                    <h4 class="font-weight-bold title-uppercase pb-2">Introduction</h4>
+                    <p class="text-dark">
+                        Anema City Center : is an Online and Offline departmental store in Uyo ,Akwa Ibom State<br/>
+                        Anamacitymall.com, is the leading online supermarket and grocery delivery service in Akwa Ibom State and Niger Delta Region. 
+                        Order online from over 40,000 products and receive same-day delivery. Visit your favorite online store, Anemacitymall.com, 
+                        for the best online same day delivery shopping in Uyo and her environs. On Anemacitymall.com, you can buy groceries online 
+                        and get the best food shopping offers compared to any other online supermarket in Akwa Ibom State. This online grocery store 
+                        in Akwa Ibom State is great for all kind of supermarket shopping and home delivery service. Online supermarket shopping should 
+                        be easy and that’s what we do best at Anemacitymall.com– we ensure that in our online supermarket, you not only get great food 
+                        shopping online offers, super market delivery but also the kind of excellent service you expect in an online shopping store. 
+                        Shop here to get the best prices and discounts on toiletries , food cupboard, beverages , drinks and household products 
+                        when you do your online shopping in Akwa Ibom State or from anywhere in Nigeria.
+                    </p>
+                    
+                    <h5 class="font-weight-bold pt-2 title-uppercase">We <i class="fa fa-heart heart"></i>&nbsp; what we do.</h5>
+                    <p class="text-dark">
+                        Our wide selection of products includes product categories like fruits, vegetables, meat, chicken, fish, toiletries, beauty products, 
+                        cosmetics, cleaning products, snacks, drinks, alcohol, canned goods,books, office supplies and lots more. Because we have the largest 
+                        assortment of groceries in Nigeria, you'll be sure to find everyday essentials like bread, eggs, tea, cooking oil, sardines, garri, yam, 
+                        carrots, apples, avocado, cornflakes, noodles, tea, coffee, soft drinks, juice, soap, deodorants, toothpaste, bleach, air fresheners, diapers, 
+                        hand wash, toilet tissue, pens, printing paper and so much more. Anemacitymall.com is the only grocery supermarket where you can fulfill your 
+                        entire shopping basket without having to drive to various stores and that's because we have all the leading brands like Coke, Fanta, Nescafe, 
+                        Indomie, Power Oil, Ola Ola, Honeywell, Indomie, Peak, Golden Morn, Heinz, Milo, Lipton, Jik, Hypo, Ariel, Kellogg's, Nutzy, De Rica, Mamador, 
+                        Gulder, Heineken, Orijin, Chivita, Dano, Oldenburger, Hollandia, Boulos, Nivea, Vaseline, Colgate, Pringles, McVities, Air Wick, Dettol. 
+                        We're a one-stop shop near you either Online/Offline. it doesn't matter what part of your home you're thinking of, we've got the products for your kitchen, 
+                        living room, bathroom, bedroom and even the office.
+                    </p>
+                    
+                    <div class="row pt-3 coloured-cards">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-big-shadow">
+                                <div class="card" data-background="color" data-color="blue" data-radius="none">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold card-category">MISSION</h6>
+                                        <!-- <h4 class="card-title">
+                                            <a href="#paper-kit">Blue Card</a>
+                                        </h4> -->
+                                        <p class="card-description">
+                                            Being the best at delivering fresh, affordable, 
+                                            high quality and well packaged farm produce in a hygienic 
+                                            environment to our customers through world class retail outlets.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end card -->
                             </div>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item">Breakfast Cereals</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Rice</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pasta & Noodles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Swallow</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Salt & Spices</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Sugar & Sweeteners</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pancake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Custard & Jelly</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Beans Seeds & Grains</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Olives & Pickles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Soup</a>
-                            </ul>
                         </div>
-                        <div class="col-lg-2 px-2 col-sm-3">
-                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
-                                Fresh Food
-                                <b class="caret"></b>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-big-shadow">
+                                <div class="card" data-background="color" data-color="green" data-radius="none">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold card-category">Vision</h6>
+                                        
+                                        <p class="card-description">
+                                        Providing easy access to quality food in major cities in Nigeria by 2025.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end card -->
                             </div>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item">Bread</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Eggs</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cheese</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Swallow</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Salt & Spices</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Sugar & Sweeteners</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pancake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Custard & Jelly</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Beans Seeds & Grains</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Olives & Pickles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Soup</a>
-                            </ul>
                         </div>
-                        <div class="col-lg-2 px-2 col-sm-3">
-                            <div class="dropdown-toggle bg-secondary text-white text-center" data-toggle="dropdown">
-                                Wineries & Spirit
-                                <b class="caret"></b>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-big-shadow">
+                                <div class="card" data-background="color" data-color="yellow" data-radius="none">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold card-category">CORE VALUES</h6>
+                                        <p class="card-description">Customer satisfaction ,Sustainable partnership with our suppliers ,Integrity ,Hygiene </p>
+                                    </div>
+                                </div>
+                                <!-- end card -->
                             </div>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item">Breakfast Cereals</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Rice</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pasta & Noodles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Swallow</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Salt & Spices</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Sugar & Sweeteners</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Cake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Pancake</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Custard & Jelly</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Beans Seeds & Grains</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Olives & Pickles</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item">Soup</a>
-                            </ul>
                         </div>
                     </div>
+
+                    <p class="text-dark">
+                        Anemacitymall.com has all the groceries you’ll find in supermarkets and retailers like Park N Shop, Spar, Hubmart, Shoprite and other big Online stores in Nigeria.
+                        Why going to the supermarkets when Anemacitymall.com or visit Anema City Center? can come to you?
+                    </p>
                 </div>
+            </div>
